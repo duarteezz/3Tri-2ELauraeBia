@@ -59,13 +59,12 @@ footer p{
     position: absolute;
     border-radius: 0.6rem;
     border: var(--text-color) solid 1px;
-
+    backface-visibility: hidden;
 
 }
 
 p{
     color: white
-
 }
 
 .cartao-conteudo-pergunta p{
@@ -73,15 +72,26 @@ p{
 }
 
 .cartao-conteudo-resposta p{
-    color: var(--cor-cartao-verso);
+    color: white;
     font-weight: 700;
 
 }
 
 .cartao-conteudo-pergunta, .cartao-conteudo-resposta{
     margin: 1rem;
+    backface-visibility: hidden;
 }
 
 .cartao:hover .cartao-conteudo{
     transform: rotateY(180deg);
+}
+
+.cartao-conteudo-resposta{
+    transform: rotateY(180deg);
+}
+
+.cartao-conteudo p{
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
