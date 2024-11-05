@@ -32,12 +32,15 @@ footer p{
 
 #container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .cartao{
     margin: 1em;
     background-color: rgb(68, 223, 215);
     height: 20rem;
+    width: 380px;
+    margin-top: 30px;
    
 }
 
@@ -90,8 +93,13 @@ p{
     transform: rotateY(180deg);
 }
 
+.cartao-conteudo-pergunta{
+    padding-top: 30px;
+}
+
 .cartao-conteudo p{
     margin-top: 2rem;
     padding: 2rem;
     margin-bottom: 2rem;
 }
+
